@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>千古知我｜历史人物性格档案</title>
+<style>
+:root{--ink:#eee6d5;--muted:#b9aa8d;--gold:#d7b66e;--line:#5a4930;--bg:#111713;--panel:#1b211b}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Noto Serif SC","Songti SC",serif;background:radial-gradient(ellipse at 50% 0%,#344035 0,#171e19 42%,#0d120f 100%);min-height:100vh}
+body:before{content:"";position:fixed;inset:12px;border:1px solid #8f754044;pointer-events:none;z-index:0}
+.wrap{width:min(880px,calc(100% - 34px));margin:auto;padding:48px 0 70px;position:relative;z-index:1}
+.top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font:11px Arial,sans-serif;letter-spacing:3px}
+.seal{border:1px solid var(--gold);color:var(--gold);padding:7px 10px;letter-spacing:2px}
+.hero{text-align:center;padding:66px 10px 42px}.orn{color:var(--gold);font-size:25px;letter-spacing:12px}
+h1{font-size:clamp(38px,8vw,68px);font-weight:500;letter-spacing:8px;margin:17px 0 8px}
+.sub{color:var(--gold);letter-spacing:5px;font:12px Arial,sans-serif}.intro{max-width:590px;margin:24px auto 0;color:#c9c0ae;line-height:2;font-size:15px}
+.panel{background:linear-gradient(145deg,#242c24ee,#151b16ee);border:1px solid #88714966;padding:clamp(22px,5vw,42px);box-shadow:0 18px 70px #0006}
+.hidden{display:none!important}.eyebrow{color:var(--gold);font:11px Arial,sans-serif;letter-spacing:3px;margin-bottom:12px}
+h2{font-size:25px;font-weight:500;margin:0 0 15px;letter-spacing:2px}.desc{color:#c2b8a5;line-height:1.9;font-size:14px}
+input{width:100%;background:#101611;border:1px solid #786441;color:white;padding:16px;font-size:20px;letter-spacing:12px;text-align:center;outline:none;margin:18px 0}
+button{cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold);padding:14px 25px;font:14px inherit;letter-spacing:2px;transition:.2s}
+button:hover{background:var(--gold);color:#171b15}button.primary{background:var(--gold);color:#171b15;font-weight:bold}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.center{text-align:center}.error{color:#e6a28c;min-height:22px;font-size:13px}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.pill{flex:1;min-width:130px;border:1px solid #665638;padding:18px 10px;text-align:center;cursor:pointer;color:#d7cbb5}.pill b{display:block;color:var(--gold);font-size:23px;margin-bottom:8px}.pill.active{background:#3a3525;border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.progress{height:3px;background:#3a4038;margin:20px 0 28px}.bar{height:100%;background:var(--gold);width:0;transition:.3s}
+.qnum{color:var(--gold);font:12px Arial,sans-serif;letter-spacing:3px}.question{font-size:24px;line-height:1.65;margin:15px 0 25px}
+.answers{display:grid;gap:12px}.answer{border:1px solid #5b523f;padding:16px 18px;text-align:left;color:#e4dccb;line-height:1.6;background:#111812}.answer:hover,.answer.selected{border-color:var(--gold);background:#343526}
+.result-head{text-align:center;padding:24px 0 30px;border-bottom:1px solid #78644166}.result-head .rank{color:var(--gold);letter-spacing:4px;font-size:12px}.person{font-size:clamp(34px,7vw,54px);margin:15px 0 7px;letter-spacing:5px}.era{color:var(--muted);font-size:14px}
+.quote{font-size:17px;line-height:2;color:#e0c98f;text-align:center;margin:25px auto;max-width:620px}
+.section{padding:24px 0;border-bottom:1px solid #78644144}.section h3{font-size:17px;color:var(--gold);font-weight:500;letter-spacing:2px;margin:0 0 13px}.section p{color:#d0c7b6;line-height:2;margin:0;font-size:14px}
+.bars{display:grid;gap:13px}.metric{display:grid;grid-template-columns:95px 1fr 35px;gap:10px;align-items:center;font-size:13px;color:#d0c7b6}.track{height:6px;background:#3a4038}.fill{height:100%;background:linear-gradient(90deg,#8b7040,#e2c77d)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.tag{border:1px solid #796542;color:#d9c18a;padding:6px 10px;font-size:12px}
+.note{color:#8f8879;font-size:12px;line-height:1.8;margin-top:22px}.foot{text-align:center;color:#857d6d;font:10px Arial,sans-serif;letter-spacing:2px;margin-top:38px}
+@media(max-width:560px){.wrap{padding-top:28px}.hero{padding:48px 5px 30px}.question{font-size:21px}.metric{grid-template-columns:78px 1fr 28px}.actions button{flex:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="top"><span>ORIENTAL CHARACTER ARCHIVE</span><span class="seal">知我 · 0701</span></div>
+ <header class="hero"><div class="orn">✦　❖　✦</div><h1>千古知我</h1><div class="sub">A JOURNEY THROUGH TIME</div><p class="intro">若将你置于千年前的风云之中，你会如何抉择？<br>十二道情境，读懂你的处世方式、内在力量与灵魂底色。<br>在历史长河里，寻找与你最相似的那个人。</p></header>
+
+ <section id="gate" class="panel center">
+  <div class="eyebrow">PRIVATE ARCHIVE · ACCESS REQUIRED</div><h2>开启你的个人档案</h2><p class="desc">请输入四位访问密码，进入历史人物性格测试。</p>
+  <input id="pass" type="password" maxlength="4" inputmode="numeric" placeholder="••••" aria-label="访问密码">
+  <div class="error" id="gateError"></div><button class="primary" onclick="unlock()">解锁档案 →</button>
+ </section>
+
+ <section id="welcome" class="panel hidden">
+  <div class="eyebrow">THE ARCHIVE IS OPEN</div><h2>先认识这场测试</h2><p class="desc">这不是知识问答，也没有标准答案。请把自己放进每一个情境，选择最接近真实反应的选项。系统将从多个性格维度进行匹配，为你生成一份专属人物档案。</p>
+  <div class="section"><h3>测试档案</h3><p>共 12 道情境题 · 约 3 分钟 · 12 位历史人物候选<br>分析维度：谋略、决断、共情、表达、韧性、抱负、独立与洞察。</p></div>
+  <div class="actions"><button class="primary" onclick="showDirection()">开始读取档案</button><button onclick="document.getElementById('how').classList.toggle('hidden')">匹配方式</button></div>
+  <p id="how" class="desc hidden">每个选项对应一组性格倾向。完成答题后，系统会将你的选择与人物性格模型进行比较，选出相似度最高的人物。结果仅供趣味自我探索。</p>
+ </section>
+
+ <section id="direction" class="panel hidden">
+  <div class="eyebrow">STEP 01 · ARCHIVE FILTER</div><h2>选择你想开启的人物档案</h2><p class="desc">这只影响候选人物范围，不改变题目与评分。</p>
+  <div class="pills">
+   <div class="pill active" data-g="all" onclick="chooseGender(this)"><b>☯</b>不设限制</div>
+   <div class="pill" data-g="female" onclick="chooseGender(this)"><b>♀</b>女性人物</div>
+   <div class="pill" data-g="male" onclick="chooseGender(this)"><b>♂</b>男性人物</div>
+  </div>
+  <div class="actions"><button onclick="backWelcome()">返回</button><button class="primary" onclick="startQuiz()">进入情境测试 →</button></div>
+ </section>
+
+ <section id="quiz" class="panel hidden">
+  <div class="eyebrow">STEP 02 · PERSONALITY READING</div><div class="qnum" id="qnum">QUESTION 01 / 12</div><div class="progress"><div class="bar" id="bar"></div></div>
+  <div class="question" id="question"></div><div class="answers" id="answers"></div>
+  <div class="actions"><button id="prev" onclick="previousQuestion()">← 上一题</button></div>
+ </section>
+
+ <section id="result" class="panel hidden">
+  <div class="eyebrow">STEP 03 · YOUR HISTORICAL PORTRAIT</div>
+  <div class="result-head"><div class="rank">YOUR MATCH · 灵魂人物档案</div><div class="person" id="person"></div><div class="era" id="era"></div><div class="tags" id="traits" style="justify-content:center"></div></div>
+  <div class="quote" id="quote"></div>
+  <div class="section"><h3>01 · 人物自画像</h3><p id="portrait"></p></div>
+  <div class="section"><h3>02 · 你的性格结构</h3><div class="bars" id="bars"></div></div>
+  <div class="section"><h3>03 · 你们相似的地方</h3><p id="similar"></p></div>
+  <div class="section"><h3>04 · 现实中的你</h3><p id="reality"></p></div>
+  <div class="section"><h3>05 · 性格盲点与提醒</h3><p id="blind"></p></div>
+  <div class="section"><h3>06 · 写给你的一句话</h3><p id="advice"></p></div>
+  <div class="actions"><button class="primary" onclick="saveCard()">保存结果图片</button><button onclick="restart()">重新测试</button></div>
+  <p class="note">本测试为原创趣味性格内容，人物匹配基于简化性格模型，不构成专业心理测评，也不代表对历史人物的完整评价。</p>
+ </section>
+ <div class="foot">千古知我 · 在时间里看见自己　✦　EST. 2026</div>
+</div>
+<script>
+const dims=['谋略','决断','共情','表达','韧性','抱负','独立','洞察'];
+const questions=[
+['面对突如其来的变局，你最先做什么？',[['先稳住局面，判断各方真正的诉求',[8,6,5,3,7,6,6,9]],['迅速行动，边做边调整',[4,10,4,5,8,8,7,5]],['观察每个人的反应，再决定立场',[7,4,8,5,5,4,6,9]],['寻找规则之外的新办法',[8,7,3,8,7,8,10,7]]]],
+['当团队意见严重分歧时，你通常会？',[['梳理利弊，提出可执行的折中方案',[9,6,7,6,6,5,6,8]],['明确表达自己的判断并推动决定',[5,10,4,8,8,8,8,6]],['先倾听每个人，照顾被忽略的声音',[5,4,10,7,6,4,5,8]],['暂时抽离，找到问题真正的根源',[8,5,5,4,6,5,9,10]]]],
+['你更希望别人因为什么记住你？',[['有远见，能把复杂的事安排妥当',[10,6,4,5,7,8,7,9]],['有勇气，关键时刻敢于承担',[5,10,5,5,10,8,8,6]],['有温度，让身边的人感到安心',[4,5,10,7,7,4,5,8]],['有才华，活出不被定义的人生',[6,7,5,10,6,8,10,7]]]],
+['如果你发现信任的人隐瞒了重要事实，你会？',[['先弄清原因和全貌，再决定如何处理',[9,5,5,4,6,5,7,10]],['直接摊开来说，不接受含糊其辞',[4,9,4,9,7,6,8,6]],['给对方解释机会，但会重新评估关系',[5,5,9,6,6,4,6,8]],['不争辩，默默调整自己的边界',[6,6,5,3,9,6,10,7]]]],
+['面对一个很难实现的目标，你更像哪一种人？',[['拆成阶段，耐心布局，逐步靠近',[10,6,5,4,10,8,7,8]],['先迈出最大的一步，创造势能',[5,10,5,6,8,10,8,6]],['寻找同伴，一起把事情做成',[6,6,9,8,7,7,5,6]],['不走寻常路，重新定义目标',[8,7,4,8,7,9,10,8]]]],
+['当你感到委屈或受挫时，你通常？',[['复盘原因，想清楚下一步怎么走',[8,6,4,3,9,7,8,9]],['不愿停留太久，马上重新开始',[4,9,5,5,10,8,8,5]],['找信任的人聊一聊，整理情绪',[4,4,10,8,6,4,5,7]],['独处一段时间，把感受转化成力量',[6,5,6,8,9,6,10,9]]]],
+['在陌生人群中，你通常会？',[['先观察关系和氛围，找到合适的位置',[8,4,7,4,6,4,6,9]],['自然地主动交流，带动气氛',[4,7,7,10,7,7,6,5]],['关注落单的人，主动释放善意',[4,5,10,7,7,4,5,7]],['保持自己的节奏，不急着融入',[6,5,4,4,8,5,10,8]]]],
+['如果拥有一次改变现状的机会，你会优先？',[['建立更长久、更有效的秩序',[10,7,5,5,8,9,7,8]],['打破不合理的限制',[5,10,6,8,8,9,9,7]],['让更多普通人被看见、被照顾',[5,6,10,7,7,7,6,8]],['创造一种全新的可能性',[8,8,4,10,7,9,10,8]]]],
+['你最难接受自己哪方面的不足？',[['考虑太多，错过最佳时机',[8,5,5,4,6,6,6,9]],['太过强势，忽略他人感受',[5,9,7,6,7,8,8,5]],['容易心软，边界不够清晰',[4,5,10,6,6,4,5,7]],['不愿妥协，显得格格不入',[7,7,4,8,8,7,10,8]]]],
+['如果必须在安全感与理想之间选择，你会？',[['先确保根基，再寻找实现理想的路径',[9,6,6,4,9,7,6,8]],['愿意承担风险，也不想留下遗憾',[5,10,5,6,8,10,9,6]],['希望理想能让重要的人一起受益',[5,6,10,7,7,7,5,7]],['宁愿走自己的路，也不想被安排',[7,7,4,8,8,8,10,8]]]],
+['当别人误解你的决定时，你更倾向于？',[['用结果证明，不急着解释',[8,7,4,3,9,7,8,8]],['把逻辑讲清楚，争取理解',[6,7,5,10,6,6,7,7]],['在意关系，愿意耐心沟通',[4,5,9,8,6,4,5,7]],['接受不是所有人都能理解自己',[6,6,4,4,9,6,10,9]]]],
+['回望人生，你最想拥有怎样的底色？',[['深谋远虑，做成值得长久的事',[10,7,5,5,9,9,7,9]],['无惧挑战，活得坦荡而有力量',[5,10,5,6,9,9,9,6]],['心怀众人，留下温柔的影响',[5,6,10,8,8,6,6,8]],['自由清醒，始终忠于内心',[7,7,5,9,8,8,10,9]]]]
+];
+const people=[
+{name:'诸葛亮',era:'三国 · 蜀汉丞相',gender:'male',v:[10,7,7,7,9,8,7,10],traits:['深谋远虑','理性克制','责任感强'],quote:'“真正的力量，不只在于看得多远，也在于愿意为所相信的事走多远。”',portrait:'你像一位善于把混乱化为秩序的人。你习惯先看全局，再落子；不轻易被眼前情绪带走，也愿意为长期目标付出耐心。你身上有规划者的冷静，也有承担者的重量。',similar:'你们都重视全局判断，擅长在复杂局势中寻找关键变量。你不一定急着成为最耀眼的人，却希望自己做出的决定经得起时间检验。',reality:'在现实中，你可能是团队里那个提前想到风险、默默补齐细节的人。别人看到的是稳妥，你自己知道那份稳妥来自反复推演。',blind:'容易把责任揽得太多，也可能因为追求周全而迟迟不肯放手。记得允许别人参与，也允许事情不必每一步都完美。',advice:'谋定之后，也要给行动留一个开始的时刻。'},
+{name:'曹操',era:'东汉末年 · 政治家、军事家',gender:'male',v:[9,10,5,8,9,10,9,8],traits:['果敢决断','现实主义','目标感强'],quote:'“看清局势之后，敢于承担选择的代价。”',portrait:'你有很强的现实判断力，不太沉迷空想。面对机会和风险，你更愿意主动掌握局面，而不是等待别人安排。你欣赏能力，也重视结果。',similar:'你们都不喜欢被动等待，面对复杂局面时有快速判断和整合资源的倾向。你愿意承担争议，只要认为方向值得。',reality:'你可能是行动力很强的人，遇到问题会先想办法解决。你对效率、边界和可信赖的能力有自己的标准。',blind:'过于强调结果时，容易忽略他人的感受；习惯掌控时，也可能让身边人感到压力。偶尔慢下来听听不同声音。',advice:'强大不只是赢得局面，也包括让别人愿意与你并肩。'},
+{name:'苏轼',era:'北宋 · 文学家、书画家',gender:'male',v:[6,6,9,10,9,6,9,9],traits:['豁达通透','表达力强','生命韧性'],quote:'“人生有风雨，也要有把日子过成诗的能力。”',portrait:'你有丰富的感受力，也有把经历转化为理解的能力。你不一定永远乐观，但懂得在起伏中寻找新的意义。你的灵魂需要空间、表达和一点自由。',similar:'你们都重视精神世界，不愿让一次挫折定义整个人生。你能从细节里感受到美，也常用幽默或表达化解沉重。',reality:'你可能很会聊天，也能理解不同人的处境。熟悉你的人会发现，你看似随性，内心其实有自己的坚持。',blind:'有时会用洒脱掩饰疲惫，或把真正需要解决的问题暂时放在一边。允许自己认真求助，不必事事都看开。',advice:'保留热爱，也认真照顾那个真实的自己。'},
+{name:'王阳明',era:'明代 · 思想家、军事家',gender:'male',v:[9,9,7,8,10,8,10,10],traits:['内在坚定','知行合一','自我觉察'],quote:'“真正的答案，往往要在行动与自省中找到。”',portrait:'你很在意内心是否认同自己的选择。你不愿只按照外界标准生活，而是希望想明白之后，真正去做。你有自我校准的能力，也有面对困难的韧性。',similar:'你们都看重内在原则，倾向于从经历中反省，而不是一味归咎环境。你希望言行一致，做一个对自己诚实的人。',reality:'你可能常常思考“我为什么这样做”，对成长有要求。遇到困境时，你需要的不只是安慰，更是重新找回方向。',blind:'容易把问题都归到自己身上，过度反省会变成自我消耗。原则重要，但也要给自己留出弹性。',advice:'想清楚很珍贵，迈出一步同样珍贵。'},
+{name:'李白',era:'唐代 · 浪漫主义诗人',gender:'male',v:[6,8,7,10,7,9,10,8],traits:['自由洒脱','想象丰沛','不拘一格'],quote:'“心里有远方的人，不会只用眼前的边界衡量人生。”',portrait:'你不太愿意被单一标准定义。你有想象力，重视体验，也愿意为心中的热爱付出。你需要的不只是稳定，更是辽阔感。',similar:'你们都向往自由，容易被新鲜事物点燃，也不喜欢机械重复。你有表达欲，愿意用自己的方式理解世界。',reality:'你可能灵感很多，适合需要创意和表达的环境。相比被严格安排，你更喜欢拥有自主空间。',blind:'兴趣来得快时，持续投入可能成为挑战；过度追求自由，也可能忽略现实安排。给热爱一个可执行的计划。',advice:'让想象带你出发，让行动陪你抵达。'},
+{name:'韩信',era:'秦末汉初 · 军事家',gender:'male',v:[10,8,4,5,10,9,9,10],traits:['战略思维','耐心蓄势','逆境成长'],quote:'“暂时的低处，不代表你看不到更远的路。”',portrait:'你擅长观察局势、积累实力，不急于在每个时刻证明自己。你能忍受阶段性的沉寂，只要心里知道自己在为什么准备。',similar:'你们都可能拥有长期规划能力，不轻易被短期评价左右。你更相信实力与时机，而不是单纯依赖运气。',reality:'你可能不爱高调表达，但对目标有清晰判断。你会默默准备，等到机会出现时再集中力量。',blind:'过度等待完美时机，可能让机会悄悄溜走；也别把所有关系都当作局势来分析。',advice:'积蓄力量，也要适时让世界看见你的能力。'},
+{name:'武则天',era:'唐代 · 女皇帝',gender:'female',v:[9,10,6,8,10,10,10,9],traits:['强大野心','果断独立','适应力强'],quote:'“不把人生交给定义自己的人，自己写下答案。”',portrait:'你有很强的自我驱动力，不轻易接受别人替你设定的位置。你善于适应环境，也愿意争取主动权。你知道自己想要什么，并愿意为之付出。',similar:'你们都重视自主与选择权，面对变化时有较强的适应能力。你不愿因为外界期待而放弃真正想走的方向。',reality:'你可能目标感强，对自己要求高。遇到竞争时，你更倾向于提升能力、争取机会，而不是等待认可。',blind:'过度独立可能让你不愿示弱，强目标感也可能挤压休息和关系。真正的底气也包括懂得求助。',advice:'不必向所有人证明自己，把力量用在真正重要的地方。'},
+{name:'李清照',era:'宋代 · 词人',gender:'female',v:[7,5,10,10,8,6,9,10],traits:['细腻敏锐','精神独立','表达深刻'],quote:'“敏感不是脆弱，而是感知世界的另一种力量。”',portrait:'你拥有细致的感受力，能捕捉别人忽略的情绪和变化。你重视精神共鸣，也需要被认真理解。你并不软弱，只是不愿把丰富的内心变得粗糙。',similar:'你们都善于观察细节，对语言、氛围和关系变化较敏锐。你有自己的审美与判断，不愿为了合群而失去内心声音。',reality:'你可能很会记住细节，也擅长表达复杂感受。真正让你安心的关系，通常不是热闹，而是理解与尊重。',blind:'容易反复回想细节，替别人揣测太多。敏锐可以帮助你理解世界，也要记得保护自己的情绪边界。',advice:'你的细腻值得珍惜，也值得被温柔对待。'},
+{name:'花木兰',era:'北朝传说人物 · 巾帼英雄',gender:'female',v:[6,10,8,5,10,8,9,8],traits:['勇敢担当','行动坚定','保护欲强'],quote:'“真正的勇敢，是明知不容易，仍愿意站出来。”',portrait:'你在关键时刻往往比自己想象得更有力量。你重视责任，也愿意为了重要的人或信念承担压力。你不一定喜欢成为焦点，但不会轻易退缩。',similar:'你们都重视承诺，遇到真正重要的事情时，行动常常先于表达。你愿意保护自己珍惜的人，也希望靠自己解决问题。',reality:'你可能是朋友眼中可靠的人，平时不一定张扬，但需要有人站出来时，你会认真承担。',blind:'习惯坚强可能让别人看不见你的疲惫。不要把所有责任都变成自己的义务，也要允许自己被照顾。',advice:'勇敢不是永远不累，而是懂得在前行时照顾自己。'},
+{name:'上官婉儿',era:'唐代 · 文学家、政治人物',gender:'female',v:[9,7,7,10,8,8,8,10],traits:['聪慧敏锐','表达出众','善于周旋'],quote:'“看懂局势，也不忘用自己的方式留下声音。”',portrait:'你对环境和人际变化很敏锐，懂得观察，也擅长表达。你能在复杂关系中找到自己的位置，不轻易放弃表达与创造。',similar:'你们都善于读取信息、理解语境，知道什么时候表达、什么时候观察。你重视能力，也在意自己是否拥有选择空间。',reality:'你可能擅长沟通、写作或协调不同立场。别人觉得你反应快，而你往往已经提前注意到很多细节。',blind:'过于顾全局面，可能让自己长期处在紧绷状态；也别总想着把每个人都照顾妥当。',advice:'聪明不仅是看懂别人，也要坦诚听见自己的需要。'},
+{name:'卓文君',era:'西汉 · 才女',gender:'female',v:[6,8,9,8,9,7,10,8],traits:['独立自主','重情重义','敢于选择'],quote:'“人生重要的不是符合期待，而是认真选择自己的路。”',portrait:'你看重情感，但不会轻易把人生完全交给别人安排。你愿意为爱与理想做选择，也希望关系建立在尊重与平等之上。',similar:'你们都希望感情与自我能够并存。你珍惜真诚，也有为选择承担后果的勇气，不喜欢被外界标准轻易左右。',reality:'你可能在关系中认真投入，但也需要保留自己的空间。你更看重真实与尊重，而不是表面上的热闹。',blind:'情感投入时容易承担太多，或在坚持与妥协之间摇摆。请记得关系需要双向奔赴。',advice:'爱与自由并不冲突，重要的是不丢失自己。'},
+{name:'班昭',era:'东汉 · 史学家、文学家',gender:'female',v:[9,6,8,9,9,7,8,10],traits:['沉静理性','知识热忱','观察深远'],quote:'“把见识沉淀成智慧，也把自己的声音留在时代里。”',portrait:'你喜欢理解事物背后的脉络，重视知识与长期积累。你不一定急于表现，但希望自己的判断有依据，自己的表达有分量。',similar:'你们都愿意观察、学习和整理经验，面对复杂问题时倾向于先理解再行动。你相信知识能让人拥有更大的选择空间。',reality:'你可能善于研究、总结与规划。你对细节有耐心，也愿意花时间把一件事真正弄明白。',blind:'容易过度追求准备充分，迟迟不肯展示成果。知识最终要走向生活，别让谨慎限制了行动。',advice:'持续学习，也要相信自己已经拥有的力量。'}
+];
+let gender='all',idx=0,answers=[];
+function show(id){['gate','welcome','direction','quiz','result'].forEach(x=>document.getElementById(x).classList.toggle('hidden',x!==id));}
+function unlock(){if(document.getElementById('pass').value==='0701'){document.getElementById('gateError').textContent='';show('welcome')}else{document.getElementById('gateError').textContent='访问码不正确，请再试一次。'}}
+document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+function showDirection(){show('direction')}
+function backWelcome(){show('welcome')}
+function chooseGender(el){gender=el.dataset.g;document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));el.classList.add('active')}
+function startQuiz(){idx=0;answers=[];show('quiz');renderQ()}
+function renderQ(){let q=questions[idx];document.getElementById('qnum').textContent=`QUESTION ${String(idx+1).padStart(2,'0')} / 12`;document.getElementById('bar').style.width=((idx)/12*100)+'%';document.getElementById('question').textContent=q[0];let box=document.getElementById('answers');box.innerHTML='';q[1].forEach((a,i)=>{let b=document.createElement('button');b.className='answer'+(answers[idx]===i?' selected':'');b.textContent=String.fromCharCode(65+i)+'　'+a[0];b.onclick=()=>{answers[idx]=i;if(idx<11){idx++;renderQ()}else finish()};box.appendChild(b)});document.getElementById('prev').style.visibility=idx===0?'hidden':'visible'}
+function previousQuestion(){if(idx>0){idx--;renderQ()}}
+function finish(){let score=Array(8).fill(0);answers.forEach((a,i)=>questions[i][1][a][1].forEach((v,j)=>score[j]+=v));let max=Math.max(...score);let normalized=score.map(v=>Math.round(v/max*100));let pool=people.filter(p=>gender==='all'||p.gender===gender);let best=pool.map(p=>({p,d:p.v.reduce((s,v,i)=>s+Math.pow(v-score[i]/12,2),0)})).sort((a,b)=>a.d-b.d)[0].p;renderResult(best,normalized);show('result')}
+function renderResult(p,values){document.getElementById('person').textContent=p.name;document.getElementById('era').textContent=p.era;document.getElementById('traits').innerHTML=p.traits.map(t=>`<span class="tag">${t}</span>`).join('');document.getElementById('quote').textContent=p.quote;['portrait','similar','reality','blind','advice'].forEach(k=>document.getElementById(k).textContent=p[k]);document.getElementById('bars').innerHTML=dims.map((d,i)=>`<div class="metric"><span>${d}</span><div class="track"><div class="fill" style="width:${values[i]}%"></div></div><span>${values[i]}</span></div>`).join('');window.currentResult={p,values}}
+function restart(){show('welcome')}
+function saveCard(){let {p,values}=window.currentResult;let c=document.createElement('canvas');c.width=1000;c.height=1400;let x=c.getContext('2d');let g=x.createLinearGradient(0,0,1000,1400);g.addColorStop(0,'#263329');g.addColorStop(1,'#101611');x.fillStyle=g;x.fillRect(0,0,1000,1400);x.strokeStyle='#b99a5c';x.lineWidth=3;x.strokeRect(35,35,930,1330);x.strokeRect(52,52,896,1300);x.fillStyle='#d9bd7b';x.textAlign='center';x.font='28px serif';x.fillText('ORIENTAL CHARACTER ARCHIVE',500,130);x.font='62px serif';x.fillText('千 古 知 我',500,245);x.font='25px serif';x.fillText('你的灵魂对应哪位历史人物',500,305);x.fillStyle='#eee4cf';x.font='72px serif';x.fillText(p.name,500,475);x.fillStyle='#c5b38f';x.font='25px serif';x.fillText(p.era,500,535);x.fillStyle='#d9bd7b';x.font='27px serif';x.fillText(p.traits.join('　·　'),500,620);x.fillStyle='#e6d9bc';x.font='italic 30px serif';wrapCanvas(x,p.quote,500,730,780,52);x.strokeStyle='#887149';x.beginPath();x.moveTo(150,850);x.lineTo(850,850);x.stroke();x.fillStyle='#d9bd7b';x.font='28px serif';x.fillText('你的性格维度',500,920);x.fillStyle='#e7dcc6';x.font='23px serif';dims.forEach((d,i)=>{let y=990+i*42;x.textAlign='left';x.fillText(d,160,y);x.fillStyle='#3b463b';x.fillRect(300,y-19,480,13);x.fillStyle='#d7b66e';x.fillRect(300,y-19,480*values[i]/100,13);x.fillStyle='#e7dcc6';x.textAlign='right';x.fillText(values[i],835,y);x.fillStyle='#e7dcc6'});x.textAlign='center';x.fillStyle='#9e927b';x.font='19px serif';x.fillText('趣味性格探索 · 千古知我 · 访问码 0701',500,1300);let a=document.createElement('a');a.download='千古知我-'+p.name+'-人物档案.png';a.href=c.toDataURL('image/png');a.click()}
+function wrapCanvas(ctx,text,x,y,maxWidth,lineHeight){let words=[...text],line='';for(let n=0;n<words.length;n++){let test=line+words[n];if(ctx.measureText(test).width>maxWidth&&n>0){ctx.fillText(line,x,y);line=words[n];y+=lineHeight}else line=test}ctx.fillText(line,x,y)}
+</script>
+</body></html>
